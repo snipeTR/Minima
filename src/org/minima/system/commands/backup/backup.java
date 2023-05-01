@@ -97,8 +97,8 @@ public class backup extends Command {
 		//Get the file
 		String file = getParam("file","");
 		if(file.equals("")) {
-			file = "minima-backup-"+System.currentTimeMillis()+".bak";
-			//file = "minima_backup_"+DATEFORMAT.format(new Date())+".bak";
+			//file = "minima-backup-"+System.currentTimeMillis()+".bak";
+			file = "minima_backup_"+DATEFORMAT.format(new Date())+".bak";
 		}
 
 		//Get a password if there is one..
